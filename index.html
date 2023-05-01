@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MUSIC PLAYER</title>
+    <link rel="shortcut icon" href="images/fav.png" type="image/.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="fas fa-caret-down"></i>
+          <span>Now Playing</span>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+          </div>
+          <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"> </p>
+          </div>
+          <div class="progress-area">
+            <div class="progress-bar">
+                
+              
+            </div>
+            <div class="timer">
+              <span class="current">0:20</span>
+              <span class="duration">3:40</span>
+            </div>
+            <audio id="main-audio" src=""></audio> 
+          </div>
+          <div class="controls">
+            <i id="repeat-plist" class="fas fa-redo-alt" title="Playlist looped"></i>
+            <i id="prev" class="fas fa-backward" title="Previous"></i>
+            <div class="play-pause">
+              <i class="fas fa-play"  ></i>
+            </div>
+            <i id="next" class="fas fa-forward" title="Next"></i>
+            <i id="more-music" class="fas fa-th-list" title="Queue"></i>
+          </div>
+          <div class="music-list">
+            <div class="header">
+              <div class="row">
+                <i class= "fas fa-th-list"></i>
+                <span>Music list</span>
+              </div>
+             <i id="close" class="fas fa-times"></i>
+            </div>
+            <ul>
+             
+            </ul>
+            
+          </div>
+        </div>  
+
+<script src="music-list.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
